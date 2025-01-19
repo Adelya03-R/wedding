@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
+    <title>Приглашение на свадьбу</title> 
+    <!-- Подключение шрифта Great vibes coursive из Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
+    <style> 
+        /* Общие стили для страницы */ 
+        html, body { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+        } 
+ 
+        /* Фон для всей страницы */ 
+        body { 
+            font-family: 'Great vibes', cursive; /* Шрифт Great vibes */ 
+            font-size: 40px; 
+            background-image: url('Л 1.jpg'); /* Картинка для общего фона */ 
+            background-size: cover; /* Картинка масштабируется, чтобы покрыть весь экран */ 
+            background-repeat: repeat; /* Повторяем */ 
+            background-position: center; /* Центрируем фон */ 
+            color: #333; 
+            min-height: 100vh; /* Минимальная высота всей страницы */ 
+            display: flex; /* Flexbox для выравнивания */ 
+            flex-direction: column; 
+            justify-content: flex-start; 
+            align-items: center; 
+            text-align: center; 
+        } 
+ 
+        /* Общий стиль для контейнеров */ 
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            width: 100%; 
+        } 
+ 
+        /* Стиль заголовка */ 
+        header { 
+            background-color: rgba(224, 198, 173, 0.8); /* Полупрозрачный фон для текста */ 
+            color: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        } 
+ 
+         /* Фон для контента */ 
+        .content { 
+            background-image: url('фон.jpg'); /* Картинка для фона контента */ 
+            background-size: cover; 
+            background-repeat: repeat; 
+            background-position: center; 
+            color: black; /* Черный текст поверх фона */ 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        } 
+ 
+        /* Дополнительные стили */ 
+        .section-title { 
+            font-size: 14px; 
+            margin-bottom: 10px; 
+        } 
+ 
+        .details { 
+            font-size: 18px; 
+            margin-bottom: 20px; 
+        } 
+ 
+        .survey { 
+            background-color: rgba(255, 255, 255, 0.8); /* Белый, полупрозрачный фон */ 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        } 
+ 
+        .survey input[type="text"], .survey select { 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+        } 
+ 
+        .survey button { 
+            padding: 15px 30px; 
+            background-color: #e5bac1; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 16px; 
+        } 
+ 
+        .survey button:hover { 
+            background-color: #819e87; 
+        } 
+ 
+        /* Адаптация для мобильных устройств */ 
+        @media (max-width: 768px) { 
+            body { 
+                font-size: 20px; 
+            } 
+            .container { 
+                padding: 10px; 
+            } 
+            header h1 { 
+                font-size: 24px; 
+            } 
+            img { 
+                max-width: 100%; 
+                height: auto; 
+            } 
+            iframe { 
+                width: 100%; 
+                height: auto; 
+            } 
+        } 
+ 
+        /* Обеспечение адаптации изображений и iframe */ 
+        img, iframe { 
+            max-width: 100%; 
+            height: auto; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header class="container"> 
+        <h1>Дорогие гости!</h1> 
+        <p><img src="мы.
+jpg" alt="свадебное фото" style="width: 398px; height: 597px; vertical-align: middle;"></p> 
+        <p>Один день в этом году будет для нас особенным, и мы хотим провести его в кругу близких и друзей.</p> 
+        <p>С большим удовольствием приглашаем вас на знаменательный праздник - нашу свадьбу!</p> 
+    </header> 
+    <div class="content container"> 
+        <h3>Детали события:</h3> 
+        <p>14.06.2025 суббота</p> 
+        <p><img src="июнь.jpg" alt="свадебное фото" style="width: 600px; height: 800px; vertical-align: middle;"></p> 
+        <h3>Регистрация брака</h3> 
+        <p>С. Николо-Березовка, ул. Карла Маркса, д. 1, З А Г С</p> 
+        <p>Сбор гостей: 13:30</p> 
+        <p>Начало: 14:00</p> 
+        <h3>Банкет</h3> 
+        <p>Г. Нефтекамск, пр. Комсомольский, 33А, банкет-холл «Тантана»</p> 
+        <p>Сбор гостей: 17:00</p> 
+        <p>Начало: 18:00</p> 
+        <h3>Пожелания:</h3> 
+        <h3>Подарки</h3> 
+        <p>Свои тёплые слова и пожелания приносите в сердцах, а подарки - в конверте.</p> 
+        <h3>Цветы</h3> 
+        <p>Знаем, что на свадьбах принято дарить цветы, но мы просим вас их не дарить, мы не успеем насладиться этой красотой!</p> 
+        <p>Но выразить вашу любовь и радость можно в виде бутылки вина, которое мы откроем на ближайшем совместном празднике.</p> 
+        <h3>Дресс код</h3> 
+        <p>Мы очень старались сделать праздник красивым и будем благодарны, если в своих нарядах вы поддержите цветовую гамму нашей свадьбы и используете следующие цвета.</p> 
+        <p>Не бойтесь советоваться по поводу образов с невестой, она будет рада помочь вам в этом!</p> 
+        <p><img src="цвета.jpg" alt="цветовая палитра свадьбы" style="width: 800px; height: 150px; vertical-align: middle;"></p> 
+        <p>Чтобы сделать празднование более комфортным, пожалуйста, заполните данную анкету и подтвердите свое присутствие до 01.05.2025.</p> 
+        <iframe src="https://forms.gle/tobB866JzYafpPLm7" style="width:100%; height:80vh; border: none;">Загрузка...</iframe> 
+        <div class="survey" style="background-color: #e9c5c7; color: white; padding: 20px; border-radius: 10px;"> 
+            <p>Ваши Дмитрий и Адель</p> 
+        </div> 
+    </div> 
+</body> 
+</html>
